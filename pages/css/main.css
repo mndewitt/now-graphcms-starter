@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.page {
+  font-family: 'Tauri', cursive;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 36px;
+  background: rgba(255,255,255,0.8);
+
+  -webkit-animation: fadein 1s ease-in; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s ease-in; /* Firefox < 16 */
+   -ms-animation: fadein 1s ease-in; /* Internet Explorer */
+    -o-animation: fadein 1s ease-in; /* Opera < 12.1 */
+       animation: fadein 1s ease-in;
+}
+
+.sub-heading {
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.sub-heading a,
+.sub-heading a:hover,
+.sub-heading a:visited {
+  color: #007AFF;
+  text-decoration: none;
+}
